@@ -11,3 +11,57 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container-fluid .jumbotron, .container .jumbotron {
+  border-radius: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.jumbotron {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper__jumbotron {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.jumbotron__content {
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-cta {
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px 15px 5px;
+  border: 2px solid blue;
+}
+
+@media screen and (max-width: 1024px)
+{
+.container-fluid .jumbotron, .container .jumbotron {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+}
+
+@media screen and (min-width: 300px) {
+
+
+  
+  
+  .jumbotron {
+    background-color: #eee;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  }
