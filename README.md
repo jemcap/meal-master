@@ -1,3 +1,5 @@
+#  [![MIT License](https://img.shields.io/badge/license-MIT-brightgreen)](https://img.shields.io/badge/license-MIT-brightgreen)
+
 # Meal Master - React Recipe App
 
 This is a React app that allows users to search for recipes based on keywords and dietary preferences. The app uses the Edamam API to fetch recipe data, and displays the results using a combination of Material UI and Bootstrap components.
@@ -5,7 +7,6 @@ This is a React app that allows users to search for recipes based on keywords an
 ## Getting Started
 
 To use the app, simply clone the repository and install the required packages using `npm install`:
-
 
 git clone https://github.com/DesislavaMetodieva/meal-master.git
 cd meal-master
@@ -34,13 +35,18 @@ React-router-bootstrap (v0.26.2)
 React-router-dom (v6.9.0)
 
 ### Credits
+
 This app was created by:
 
-[![Contributors](https://contributors-img.web.app/image?repo=yourusername/your-repo)](https://github.com/yourusername/your-repo/graphs/contributors) 
+- 💬 GitHub: https://github.com/DesislavaMetodieva
+- 💬 GitHub: https://github.com/jemcap
+- 💬 GitHub: https://github.com/kelenyathi
+- 💬 GitHub: https://github.com/Malyun39
 
- The design and functionality were inspired by [insert inspiration here]. The app uses the Edamam API for recipe search and diet, which is owned and maintained by Edamam.
 
 ### Deployed page
 
 [deployment] (https://delightful-granita-074cbc.netlify.app/)
 
+
+### Screenshot of application
