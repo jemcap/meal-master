@@ -5,6 +5,7 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from './components/Header'
+import Contact from './components/Contact'
 // import Service from './components/service'
 // import About from './components/About'
 
@@ -17,8 +18,9 @@ ReactDOM.render(
         {/* 
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
+         */}
         <Route path="/contact" element={<Contact />} /> 
-        */}
+       
       </Routes>
     </Router>
   </React.StrictMode>,
