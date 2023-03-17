@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import RecipeResults from "./RecipeResults"
 
 const Home = () => {
   const [query, setQuery] = useState("");
@@ -48,11 +49,7 @@ const Home = () => {
                 <button onClick={handleSearch}>Search</button>
               </p>
             </div>
-            <ul>
-              {recipes.map((recipe) => (
-                <li key={recipe.recipe.uri}>{recipe.recipe.label}</li>
-              ))}
-            </ul>
+            <RecipeResults recipes={recipes} />
           </div>
         </div>
       </div>
