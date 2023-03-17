@@ -45,9 +45,7 @@ const Home = () => {
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
                 />
-                ;
                 <button onClick={handleSearch}>Search</button>
-                ;
               </p>
             </div>
             <ul>
