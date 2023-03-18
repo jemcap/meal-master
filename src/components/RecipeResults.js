@@ -7,11 +7,9 @@ import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Collapse from '@mui/material/Collapse';
 import Avatar from '@mui/material/Avatar';
-import IconButton, { IconButtonProps } from '@mui/material/IconButton';
+import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import LinkIcon from '@mui/icons-material/Link';
@@ -40,7 +38,7 @@ const ExpandMore = styled((props) => {
   }));
 
   export default function RecipeReviewCard(props) {
-    const { lable, mealType, cuisineType, image, recipeUrl, ingredients } = props;
+    const { lable, mealType, cuisineType, image, ingredients } = props;
     const [expanded, setExpanded] = React.useState(false);
   
     const handleExpandClick = () => {
