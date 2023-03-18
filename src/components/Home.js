@@ -22,6 +22,8 @@ const Home = () => {
       .then(function (response) {
         setRecipes(response.data.hits);
         console.log(response.data.hits);
+  
+
       })
       .catch(function (error) {
         console.error(error);
@@ -50,21 +52,22 @@ const Home = () => {
                 <button onClick={handleSearch}>Search</button>
               </p>
             </div>
-            <div className="recipeResults">
-             {recipes.map(recipe => (
-              <RecipeResults 
-              key={recipe.label}
-              label={recipe.label}
-              mealType={recipe.mealType}
-              cuisineType={recipe.cuisineType}
-              image={recipe.image}
-              recipeUrl={recipe.url}
-              ingredients={recipe.ingredients}
-              />
-             ))}
-            </div>
+            
           </div>
         </div>
+      </div>
+      <div className="recipeResults">
+        {recipes.map(({recipe}) => (
+          <RecipeResults 
+            key={recipe.url}
+            label={recipe.label}
+            mealType={recipe.mealType}
+            cuisineType={recipe.cuisineType}
+            image={recipe.image}
+            recipeUrl={recipe.url}
+            ingredients={recipe.ingredients}
+          />
+        ))}
       </div>
     </>
   );
