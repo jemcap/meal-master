@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import RecipeResults from "./RecipeResults";
+import './Home.css';
 
 const Home = () => {
   const [query, setQuery] = useState("");
@@ -71,7 +72,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="recipeResults">
+      <div className="recipeResults grid-container">
         {recipes.map(({ recipe }) => (
           <RecipeResults
             key={recipe.url}

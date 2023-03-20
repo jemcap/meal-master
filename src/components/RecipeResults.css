@@ -1,0 +1,11 @@
+.card-item {
+    width: 33%;
+    margin: 64px;
+    background-color: #faedef !important;
+    transition: all 0.3s ease-in-out;
+    background-image: linear-gradient(to bottom, #fdd9d9, #f7f2f0);
+}
+
+.card-item:hover {
+    transform: scale(1.05);
+}
