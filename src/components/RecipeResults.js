@@ -26,7 +26,7 @@ const ExpandMore = styled((props) => {
   }));
 
   export default function RecipeReviewCard(props) {
-    const { label, mealType, cuisineType, image, ingredients } = props;
+    const { label, mealType, cuisineType, image, ingredients, recipeUrl } = props;
     const [expanded, setExpanded] = React.useState(false);
   
     const handleExpandClick = () => {
@@ -62,9 +62,11 @@ const ExpandMore = styled((props) => {
             </Typography>
           </CardContent>
           <CardActions disableSpacing>
+          <a href={recipeUrl}>
             <IconButton aria-label="link to recipe">
               <LinkIcon />
             </IconButton>
+            </a>
             <ExpandMore
               expand={expanded}
               onClick={handleExpandClick}
