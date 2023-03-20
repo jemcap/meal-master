@@ -22,7 +22,7 @@ const Home = () => {
       .then(function (response) {
         setRecipes(response.data.hits);
         console.log(response.data.hits);
-  
+        console.log(response.data.hits[0].recipe.label)
 
       })
       .catch(function (error) {

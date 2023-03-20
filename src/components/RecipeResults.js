@@ -11,20 +11,7 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
 import LinkIcon from '@mui/icons-material/Link';
-//import Grid from '@material-ui/core/Grid';
-
-
-// const RecipeResults = ({key, lable, mealType, cuisineType, image, recipeUrl, ingredients }) => {
-//     return (
-//     <div>
-//         <h1>Recipe</h1>
-//     </div>
-//     );
-//   };
-  
-//  export default RecipeResults;
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -38,11 +25,12 @@ const ExpandMore = styled((props) => {
   }));
 
   export default function RecipeReviewCard(props) {
-    const { lable, mealType, cuisineType, image, ingredients } = props;
+    const { label, mealType, cuisineType, image, ingredients } = props;
     const [expanded, setExpanded] = React.useState(false);
   
     const handleExpandClick = () => {
       setExpanded(!expanded);
+      
     };
 
     return (
@@ -53,13 +41,10 @@ const ExpandMore = styled((props) => {
                 {mealType}
               </Avatar>
             }
-            action={
-              <IconButton aria-label="settings">
-                <MoreVertIcon />
-              </IconButton>
-            }
-            title={lable}
-            subheader={cuisineType}
+            
+            title={label}
+            // subheader={mealType}
+          
           />
           <CardMedia
             component="img"
@@ -69,9 +54,10 @@ const ExpandMore = styled((props) => {
           />
           <CardContent>
             <Typography variant="body2" color="text.secondary">
-              This impressive paella is a perfect party dish and a fun meal to cook
-              together with your guests. Add 1 cup of frozen peas along with the mussels,
-              if you like.
+             The recipe is suitable for {mealType}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+             Cuisine type is {cuisineType}
             </Typography>
           </CardContent>
           <CardActions disableSpacing>
@@ -98,3 +84,5 @@ const ExpandMore = styled((props) => {
         </Card>
       );
     }
+
+  
