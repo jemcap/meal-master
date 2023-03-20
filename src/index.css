@@ -1,15 +1,23 @@
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar for IE, Edge and Firefox */
 }
 
 code {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-.container-fluid .jumbotron, .container .jumbotron {
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.container-fluid .jumbotron,
+.container .jumbotron {
   border-radius: 6px;
   padding-left: 15px;
   padding-right: 15px;
@@ -20,6 +28,11 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.bg-image {
+  background-size: cover;
+  width: 100%;
 }
 
 .wrapper__jumbotron {
@@ -40,19 +53,19 @@ code {
   border: 2px solid blue;
 }
 
-@media screen and (max-width: 1024px)
-{
-.container-fluid .jumbotron, .container .jumbotron {
+@media screen and (max-width: 1024px) {
+  .container-fluid .jumbotron,
+  .container .jumbotron {
     padding-left: 60px;
     padding-right: 60px;
-}
+  }
+  .bg-image {
+    background-size: cover;
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 300px) {
-
-
-  
-  
   .jumbotron {
     background-color: #eee;
     padding-left: 60px;
@@ -61,4 +74,4 @@ code {
     padding-bottom: 30px;
     padding-top: 30px;
   }
-  }
+}
