@@ -12,6 +12,7 @@ import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import LinkIcon from '@mui/icons-material/Link';
+import AvatarLabel from './AvatarLabel';
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -38,7 +39,7 @@ const ExpandMore = styled((props) => {
           <CardHeader
             avatar={
               <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                {mealType}
+               <AvatarLabel label={label}/>
               </Avatar>
             }
             
