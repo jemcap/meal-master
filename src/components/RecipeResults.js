@@ -12,6 +12,7 @@ import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import LinkIcon from '@mui/icons-material/Link';
+import AvatarLabel from './AvatarLabel';
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -25,7 +26,7 @@ const ExpandMore = styled((props) => {
   }));
 
   export default function RecipeReviewCard(props) {
-    const { label, mealType, cuisineType, image, ingredients } = props;
+    const { label, mealType, cuisineType, image, ingredients, recipeUrl } = props;
     const [expanded, setExpanded] = React.useState(false);
   
     const handleExpandClick = () => {
@@ -38,7 +39,7 @@ const ExpandMore = styled((props) => {
           <CardHeader
             avatar={
               <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                {mealType}
+               <AvatarLabel label={label}/>
               </Avatar>
             }
             
@@ -61,9 +62,11 @@ const ExpandMore = styled((props) => {
             </Typography>
           </CardContent>
           <CardActions disableSpacing>
+          <a href={recipeUrl}>
             <IconButton aria-label="link to recipe">
               <LinkIcon />
             </IconButton>
+            </a>
             <ExpandMore
               expand={expanded}
               onClick={handleExpandClick}
