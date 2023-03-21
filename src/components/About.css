@@ -1,0 +1,36 @@
+.logo{
+    width: 200px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin:auto;
+}
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.button {
+background: #001AFF;
+border: 3px solid #001AFF;
+box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.75);
+border-radius: 10px;
+padding:10px 20px 10px 20px;
+color:white;
+}
+a{
+    color:white;
+}
+h1{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 77px;
+text-align: center;
+
+color: #1D1D1D;
+}
+p{
+    text-align: center;
+}
