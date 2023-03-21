@@ -3,6 +3,7 @@ import axios from "axios";
 import RecipeResults from "./RecipeResults";
 import "./Home.css";
 import { useNavigate } from "react-router-dom";
+import BonApetit from "../assets/bonapetit.png";
 
 const Home = () => {
   const [query, setQuery] = useState("");
@@ -59,8 +60,13 @@ const Home = () => {
       >
         <div className="wrapper__jumbotron d-flex">
           <div className="jumbotron__content d-flex flex-column">
-            <h1>Hello</h1>
-            <p>Lorem Ipsum.</p>
+            <img
+              className="jumbotron_content-head"
+              src={BonApetit}
+              alt="Bon Apetit"
+              width={750}
+            />
+            <p className="jumbotron_content-para">Lorem Ipsum.</p>
             <div className="d-flex gap-2">
               <p>
                 <button onClick={navigateToAbout} className="btn-cta">
@@ -69,11 +75,15 @@ const Home = () => {
               </p>
               <p>
                 <input
+                  className="inputBox"
                   type="text"
+                  placeholder="What do you fancy?"
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
                 />
-                <button onClick={handleSearch}>Search</button>
+                <button onClick={handleSearch} className="inputBox-btn">
+                  Search
+                </button>
               </p>
             </div>
           </div>

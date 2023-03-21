@@ -48,11 +48,30 @@ body::-webkit-scrollbar {
   align-items: center;
 }
 
+
+
 .btn-cta {
   background-color: white;
   border-radius: 5px;
   padding: 5px 15px 5px;
+  border: 2px solid white;
+}
+
+.inputBox {
   border: 2px solid blue;
+  border-radius: 5px;
+  height: 2.35em;
+}
+
+.inputBox-btn {
+  background-color: blue;
+  border: 1px solid blue;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  height: 2.35em;
+  padding: 5px 10px;
+  margin-left: 0.5em;
 }
 
 @media screen and (max-width: 1024px) {
@@ -65,9 +84,13 @@ body::-webkit-scrollbar {
     background-size: cover;
     width: 100%;
   }
+  .jumbotron__content img {
+    width: 500px;
+  }
 }
+  
 
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 300px) and (max-width: 750px) {
   .jumbotron {
     background-color: #eee;
     padding-left: 60px;
@@ -75,5 +98,8 @@ body::-webkit-scrollbar {
     margin-bottom: 30px;
     padding-bottom: 30px;
     padding-top: 30px;
+  }
+  .jumbotron__content img {
+    width: 350px;
   }
 }
