@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import RecipeResults from "./RecipeResults";
-import './Home.css';
+import "./Home.css";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const [query, setQuery] = useState("");
@@ -44,6 +45,12 @@ const Home = () => {
       });
   };
 
+  const navigate = useNavigate();
+
+  const navigateToAbout = () => {
+    navigate("/About");
+  };
+
   return (
     <>
       <div
@@ -56,9 +63,9 @@ const Home = () => {
             <p>Lorem Ipsum.</p>
             <div className="d-flex gap-2">
               <p>
-                <a href="www.google.com">
-                  <button className="btn-cta">Read More</button>
-                </a>
+                <button onClick={navigateToAbout} className="btn-cta">
+                  Read More
+                </button>
               </p>
               <p>
                 <input
