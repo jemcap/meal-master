@@ -14,7 +14,7 @@ ReactDOM.render(
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="*" element={<App />} />
         {/* 
         <Route path="/home" element={<Home />} />
        
