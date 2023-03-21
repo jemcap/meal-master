@@ -14,6 +14,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import LinkIcon from '@mui/icons-material/Link';
 import AvatarLabel from './AvatarLabel';
 import './RecipeResults.css';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -25,6 +26,12 @@ const ExpandMore = styled((props) => {
       duration: theme.transitions.duration.shortest,
     }),
   }));
+
+  const theme = createTheme({
+    typography: {
+        fontFamily: "'Montserrat', sans-serif",
+    },
+});
 
   export default function RecipeReviewCard(props) {
     const { label, mealType, cuisineType, image, ingredients, recipeUrl } = props;
@@ -38,6 +45,7 @@ const ExpandMore = styled((props) => {
     };
 
     return (
+      <ThemeProvider theme={theme}>
         <Card sx={{ maxWidth: 345 }} className="card-item">
           <CardHeader
             avatar={
@@ -85,6 +93,7 @@ const ExpandMore = styled((props) => {
             </CardContent>
           </Collapse>
         </Card>
+        </ThemeProvider>
       );
     }
 
