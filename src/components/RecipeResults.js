@@ -28,11 +28,13 @@ const ExpandMore = styled((props) => {
 
   export default function RecipeReviewCard(props) {
     const { label, mealType, cuisineType, image, ingredients, recipeUrl } = props;
-    const [expanded, setExpanded] = React.useState(false);
+    const [expandedArray, setExpandedArray] = React.useState(Array(props.resultsLength).fill(false));
+    
   
     const handleExpandClick = () => {
-      setExpanded(!expanded);
-      
+      const expandedCopy = [...expandedArray];
+      expandedCopy[recipeUrl] = !expandedArray[recipeUrl];
+      setExpandedArray(expandedCopy);
     };
 
     return (
@@ -43,10 +45,7 @@ const ExpandMore = styled((props) => {
                <AvatarLabel label={label}/>
               </Avatar>
             }
-            
             title={label}
-            // subheader={mealType}
-          
           />
           <CardMedia
             component="img"
@@ -69,15 +68,15 @@ const ExpandMore = styled((props) => {
             </IconButton>
             </a>
             <ExpandMore
-              expand={expanded}
-              onClick={handleExpandClick}
-              aria-expanded={expanded}
-              aria-label="show more"
+             expand={expandedArray[recipeUrl]}
+             onClick={handleExpandClick}
+             aria-expanded={expandedArray[recipeUrl]}
+             aria-label="show more"
             >
               <ExpandMoreIcon />
             </ExpandMore>
           </CardActions>
-          <Collapse in={expanded} timeout="auto" unmountOnExit>
+          <Collapse in={expandedArray[recipeUrl]} timeout="auto" unmountOnExit>
             <CardContent>
               <Typography paragraph>Ingredients:</Typography>
               {ingredients.map((ingredient) => (
