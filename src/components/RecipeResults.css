@@ -1,9 +1,11 @@
 .card-item {
     width: 33%;
-    margin: 64px;
+    margin: 24px;
     background-color: #faedef !important;
     transition: all 0.3s ease-in-out;
     background-image: linear-gradient(to bottom, #fdd9d9, #f7f2f0);
+    height: fit-content;
+    font-family: "Montserrat", sans-serif !important;
 }
 
 .card-item:hover {
