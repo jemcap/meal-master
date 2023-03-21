@@ -16,6 +16,8 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+
+
 .container-fluid .jumbotron,
 .container .jumbotron {
   border-radius: 6px;

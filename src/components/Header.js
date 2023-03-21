@@ -5,7 +5,7 @@ import logo from "../assets/Logo.png";
 
 const Header = () => {
   return (
-    <Navbar expand="lg">
+    <Navbar expand="lg" className="mx-5">
       <LinkContainer to="/">
         <Navbar.Brand>
           <img
@@ -18,7 +18,7 @@ const Header = () => {
       </LinkContainer>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ms-auto d-flex gap-4">
+        <Nav className="ms-auto d-flex gap-5">
           <LinkContainer to="/">
             <Nav.Link>Home</Nav.Link>
           </LinkContainer>
