@@ -26,7 +26,7 @@ body::-webkit-scrollbar {
 }
 
 .jumbotron {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,7 +104,7 @@ body::-webkit-scrollbar {
   margin-left: 0.5em;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 750px) and (max-width: 1280px) {
   .container-fluid .jumbotron,
   .container .jumbotron {
     padding-left: 60px;
@@ -123,6 +123,27 @@ body::-webkit-scrollbar {
     height: 2.35em;
     width: 350px;
   }
+  .jumbotron__content-para {
+    color: white;
+    font-weight: bold;
+    width: 75%;
+    font-size: 1em;
+    background-color: rgba(72, 72, 72, 0.5);
+    backdrop-filter: blur(2px);
+    padding: 25px;
+    border-radius: 20px;
+  }
+  .jumbotron__content-para-steps {
+    color: white;
+    font-weight: bold;
+    width: 75%;
+    font-size: 1em;
+    background-color: rgba(72, 72, 72, 0.5);
+    backdrop-filter: blur(2px);
+    padding: 25px;
+    border-radius: 20px;
+    text-align: justify;
+  }
 }
   
 
@@ -134,15 +155,21 @@ body::-webkit-scrollbar {
     margin-bottom: 30px;
     padding-bottom: 30px;
     padding-top: 30px;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
+ 
   .jumbotron__content img {
-    width: 350px;
+    width: 300px;
   }
   .jumbotron__content-para {
     color: white;
     font-weight: bold;
     width: 100%;
-    font-size: 1em;
+    font-size: 0.75em;
     background-color: rgba(72, 72, 72, 0.5);
     backdrop-filter: blur(2px);
     padding: 25px;
@@ -152,7 +179,7 @@ body::-webkit-scrollbar {
     color: white;
     font-weight: bold;
     width: 100%;
-    font-size: 1em;
+    font-size: 0.75em;
     background-color: rgba(72, 72, 72, 0.5);
     backdrop-filter: blur(2px);
     padding: 25px;
