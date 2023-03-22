@@ -16,7 +16,9 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-
+a {
+  text-decoration: none;
+}
 
 .container-fluid .jumbotron,
 .container .jumbotron {
@@ -102,6 +104,25 @@ body::-webkit-scrollbar {
   height: 2.35em;
   padding: 5px 10px;
   margin-left: 0.5em;
+}
+
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  margin-bottom: 3em;
+}
+
+.footer__content p {
+  font-size: 0.75em;
+}
+
+.github-icon {
+  font-size: 1.5em;
+  color: #2f2f2f;
 }
 
 @media screen and (min-width: 750px) and (max-width: 1280px) {
