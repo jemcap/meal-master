@@ -39,12 +39,11 @@ const About = () => {
               reducing the stress of meal preparation.
             </p>
             <div className="d-flex gap-2">
-              <p></p>
 
-              <div className="button">
+              <div className="inputBox-btn">
                 {" "}
-                <a href="https://github.com/DesislavaMetodieva/meal-master">
-                  View Repo
+                <a href="https://github.com/DesislavaMetodieva/meal-master" className="about-cta">
+                  <p>View Repo</p>
                 </a>
               </div>
             </div>
