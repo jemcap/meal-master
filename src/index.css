@@ -79,8 +79,6 @@ a {
   font-weight: bolder;
 }
 
-
-
 .btn-cta {
   background-color: white;
   border-radius: 5px;
@@ -106,7 +104,6 @@ a {
   margin-left: 0.5em;
 }
 
-
 .footer__content {
   display: flex;
   flex-direction: column;
@@ -114,6 +111,9 @@ a {
   align-items: center;
   height: 20px;
   margin-bottom: 3em;
+  bottom: 0;
+  left: 0;
+  margin-top: 50px;
 }
 
 .footer__content p {
@@ -166,7 +166,6 @@ a {
     text-align: justify;
   }
 }
-  
 
 @media screen and (min-width: 300px) and (max-width: 750px) {
   .jumbotron {
@@ -182,7 +181,6 @@ a {
     align-items: center;
   }
 
- 
   .jumbotron__content img {
     width: 300px;
   }
@@ -224,7 +222,6 @@ a {
     justify-content: center;
     margin-top: 2em;
     width: 95%;
-    
   }
 
   .btn-cta {
