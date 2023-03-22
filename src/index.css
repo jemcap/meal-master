@@ -47,6 +47,35 @@ body::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
 }
+.jumbotron__content-para {
+  color: white;
+  font-weight: bold;
+  width: 50%;
+  font-size: 1.2em;
+  background-color: rgba(72, 72, 72, 0.5);
+  backdrop-filter: blur(2px);
+  padding: 25px;
+  border-radius: 20px;
+}
+.jumbotron__content-para p {
+  text-align: justify;
+}
+.jumbotron__content-para-steps {
+  color: white;
+  font-weight: bold;
+  width: 50%;
+  font-size: 1.2em;
+  background-color: rgba(72, 72, 72, 0.5);
+  backdrop-filter: blur(2px);
+  padding: 25px;
+  border-radius: 20px;
+  text-align: justify;
+}
+
+.steps-span {
+  color: orange;
+  font-weight: bolder;
+}
 
 
 
@@ -58,16 +87,17 @@ body::-webkit-scrollbar {
 }
 
 .inputBox {
-  border: 2px solid blue;
+  border: 2px solid orange;
   border-radius: 5px;
   height: 2.35em;
+  width: 500px;
 }
 
 .inputBox-btn {
-  background-color: blue;
-  border: 1px solid blue;
+  background-color: orange;
+  border: 1px solid orange;
+  color: #2f2f2f;
   border-radius: 5px;
-  color: white;
   font-weight: bold;
   height: 2.35em;
   padding: 5px 10px;
@@ -87,6 +117,12 @@ body::-webkit-scrollbar {
   .jumbotron__content img {
     width: 500px;
   }
+  .inputBox {
+    border: 2px solid orange;
+    border-radius: 5px;
+    height: 2.35em;
+    width: 350px;
+  }
 }
   
 
@@ -100,6 +136,50 @@ body::-webkit-scrollbar {
     padding-top: 30px;
   }
   .jumbotron__content img {
+    width: 350px;
+  }
+  .jumbotron__content-para {
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    font-size: 1em;
+    background-color: rgba(72, 72, 72, 0.5);
+    backdrop-filter: blur(2px);
+    padding: 25px;
+    border-radius: 20px;
+  }
+  .jumbotron__content-para-steps {
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    font-size: 1em;
+    background-color: rgba(72, 72, 72, 0.5);
+    backdrop-filter: blur(2px);
+    padding: 25px;
+    border-radius: 20px;
+    text-align: justify;
+  }
+  .jumbotron__content-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .inputBox {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 50px;
+  }
+  .inputBox-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    width: 95%;
+    
+  }
+
+  .btn-cta {
     width: 350px;
   }
 }
