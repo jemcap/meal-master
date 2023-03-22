@@ -61,13 +61,40 @@ const Home = () => {
         <div className="wrapper__jumbotron d-flex">
           <div className="jumbotron__content d-flex flex-column">
             <img
-              className="jumbotron_content-head"
+              className="jumbotron__content-head"
               src={BonApetit}
               alt="Bon Apetit"
               width={750}
             />
-            <p className="jumbotron_content-para">Lorem Ipsum.</p>
-            <div className="d-flex gap-2">
+            <div className="jumbotron__content-para mb-4">
+              <p>
+                Having a hard time deciding what to cook? Are you struggling to
+                plan meals for the week? Or, maybe you just want a spontaneous adventure
+                for your palate...
+              </p>
+
+              <p>
+                Meal Master will help ease your stress in just a few steps!
+              </p>
+            </div>
+
+            <p className="jumbotron__content-para-steps">
+              1. Enter your desired{" "}
+              <span className="steps-span">ingredients</span>,{" "}
+              <span className="steps-span">meals</span>,{" "}
+              <span className="steps-span">category</span>, or even{" "}
+              <span className="steps-span">cuisine</span> in the input box
+              below!
+              <br />
+              2. Hit <span className="steps-span">Search</span> whenever you are
+              ready
+              <br />
+              3. Scroll down to view the many recipes Meal Master has generated
+              for you
+              <br />
+              4. Choose one to dive into and Enjoy!
+            </p>
+            <div className="d-flex gap-2 jumbotron__content-cta">
               <p>
                 <button onClick={navigateToAbout} className="btn-cta">
                   Read More
