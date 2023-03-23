@@ -50,3 +50,5 @@ This app was created by:
 
 
 ### Screenshot of application
+
+![Meal Master](https://user-images.githubusercontent.com/82023025/227016807-6f77ff3b-0d46-4671-8b93-971577b9fa87.png)
