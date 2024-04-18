@@ -26,8 +26,14 @@ const Home = () => {
   const handleSearch = () => {
     const options = {
       method: "GET",
-      url: "https://edamam-recipe-search.p.rapidapi.com/search",
-      params: { q: query },
+      url: "https://edamam-recipe-search.p.rapidapi.com/api/recipes/v2",
+      params: {
+        type: "public",
+        co2EmissionsClass: "A+",
+        beta: "true",
+        random: "true",
+        q: query,
+      },
       headers: {
         "X-RapidAPI-Key": "47ea3bc783mshf2462813017f5a9p100c35jsnb736c52e8a6c",
         "X-RapidAPI-Host": "edamam-recipe-search.p.rapidapi.com",
@@ -69,13 +75,11 @@ const Home = () => {
             <div className="jumbotron__content-para mb-4">
               <p>
                 Having a hard time deciding what to cook? Are you struggling to
-                plan meals for the week? Or, maybe you just want a spontaneous adventure
-                for your palate...
+                plan meals for the week? Or, maybe you just want a spontaneous
+                adventure for your palate...
               </p>
 
-              <p>
-                Meal Master will help ease your stress in just a few steps!
-              </p>
+              <p>Meal Master will help ease your stress in just a few steps!</p>
             </div>
 
             <p className="jumbotron__content-para-steps">
